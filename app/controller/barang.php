@@ -142,4 +142,9 @@ public function hapus($id){
   $this->loadLayout("login",$data);
   $this->render();
 }
+public function hapus_proses($id){
+  //Tangkap inputan  input handler
+  $barang = $this->bm->del($id);
+
+}
 }

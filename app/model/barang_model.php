@@ -25,4 +25,8 @@ class Barang_Model extends SENE_Model{
     $sql = "UPDATE `barang` SET `jenis_barang` = '$jenis_barang', `harga_barang` = '$harga_barang', `harga_perbungkus_barang` = '$harga_perbungkus_barang', `harga_satuan_barang` = '$harga_satuan_barang', `pengeluaran_barang` = '$pengeluaran_barang', `pemasukan_barang` = '$pemasukan_barang' WHERE `barang`.`id` = $id;";
     return $this->db->exec($sql);
   }
+  public function del($id){
+    $sql = "DELETE FROM `barang` WHERE `barang`.`id` = $id";
+    return $this->db->exec($sql);
+  }
 }
