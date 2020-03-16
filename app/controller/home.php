@@ -29,7 +29,7 @@ class Home extends JI_Controller{
 		//this view for INPAGE JS Script can be found on app/view/front/page/home/home_bottom.php
 		$this->putJsContent("home/home_bottom",$data); //pass data to view
 
-		$this->loadLayout("col-2-left",$data);
+		$this->loadLayout("col-1",$data);
 		$this->render();
 	}
 }
